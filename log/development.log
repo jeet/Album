@@ -5861,3 +5861,856 @@ Rendering template within layouts/application
 Rendering albums/show
   [4;36;1mImage Load (0.4ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 12) [0m
 Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/albums/12]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:43:13) [GET]
+  [4;36;1mAlbum Load (0.6ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 10) [0m
+
+ActionView::TemplateError (undefined method `photo' for nil:NilClass) on line #18 of app/views/albums/index.html.erb:
+15:     <td><%= link_to album.title, album %></td>
+16:     <td><%= album.short_name %></td>
+17: 	<td>
+18: 	         <%= show_thumbnail(album) %>
+19: 	    </td>
+20:     <td><%= link_to 'Edit', edit_album_path(album) %></td>
+21:     <td><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/helpers/application_helper.rb:5:in `show_thumbnail'
+    app/views/albums/index.html.erb:18
+    app/views/albums/index.html.erb:12:in `each'
+    app/views/albums/index.html.erb:12
+    app/controllers/albums_controller.rb:7:in `index'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:43:15) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.1ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 10) [0m
+
+ActionView::TemplateError (undefined method `photo' for nil:NilClass) on line #18 of app/views/albums/index.html.erb:
+15:     <td><%= link_to album.title, album %></td>
+16:     <td><%= album.short_name %></td>
+17: 	<td>
+18: 	         <%= show_thumbnail(album) %>
+19: 	    </td>
+20:     <td><%= link_to 'Edit', edit_album_path(album) %></td>
+21:     <td><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/helpers/application_helper.rb:5:in `show_thumbnail'
+    app/views/albums/index.html.erb:18
+    app/views/albums/index.html.erb:12:in `each'
+    app/views/albums/index.html.erb:12
+    app/controllers/albums_controller.rb:7:in `index'
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:43:31) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.8ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 10) [0m
+
+ActionView::TemplateError (undefined method `photo' for nil:NilClass) on line #18 of app/views/albums/index.html.erb:
+15:     <td><%= link_to album.title, album %></td>
+16:     <td><%= album.short_name %></td>
+17: 	<td>
+18: 	         <%= show_thumbnail(album) %>
+19: 	    </td>
+20:     <td><%= link_to 'Edit', edit_album_path(album) %></td>
+21:     <td><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/helpers/application_helper.rb:5:in `show_thumbnail'
+    app/views/albums/index.html.erb:18
+    app/views/albums/index.html.erb:12:in `each'
+    app/views/albums/index.html.erb:12
+    app/controllers/albums_controller.rb:7:in `index'
+
+Rendered rescues/_trace (105.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:43:49) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.1ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 10) [0m
+
+ActionView::TemplateError (undefined method `photo' for nil:NilClass) on line #18 of app/views/albums/index.html.erb:
+15:     <td><%= link_to album.title, album %></td>
+16:     <td><%= album.short_name %></td>
+17: 	<td>
+18: 	         <%= show_thumbnail(album) %>
+19: 	    </td>
+20:     <td><%= link_to 'Edit', edit_album_path(album) %></td>
+21:     <td><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/helpers/application_helper.rb:5:in `show_thumbnail'
+    app/views/albums/index.html.erb:18
+    app/views/albums/index.html.erb:12:in `each'
+    app/views/albums/index.html.erb:12
+    app/controllers/albums_controller.rb:7:in `index'
+
+Rendered rescues/_trace (39.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:44:04) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.1ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 10) [0m
+
+ActionView::TemplateError (undefined method `photo' for nil:NilClass) on line #18 of app/views/albums/index.html.erb:
+15:     <td><%= link_to album.title, album %></td>
+16:     <td><%= album.short_name %></td>
+17: 	<td>
+18: 	         <%= show_thumbnail(album) %>
+19: 	    </td>
+20:     <td><%= link_to 'Edit', edit_album_path(album) %></td>
+21:     <td><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/helpers/application_helper.rb:5:in `show_thumbnail'
+    app/views/albums/index.html.erb:18
+    app/views/albums/index.html.erb:12:in `each'
+    app/views/albums/index.html.erb:12
+    app/controllers/albums_controller.rb:7:in `index'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:44:12) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.1ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 10) [0m
+
+ActionView::TemplateError (undefined method `photo' for nil:NilClass) on line #18 of app/views/albums/index.html.erb:
+15:     <td><%= link_to album.title, album %></td>
+16:     <td><%= album.short_name %></td>
+17: 	<td>
+18: 	         <%= show_thumbnail(album) %>
+19: 	    </td>
+20:     <td><%= link_to 'Edit', edit_album_path(album) %></td>
+21:     <td><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/helpers/application_helper.rb:5:in `show_thumbnail'
+    app/views/albums/index.html.erb:18
+    app/views/albums/index.html.erb:12:in `each'
+    app/views/albums/index.html.erb:12
+    app/controllers/albums_controller.rb:7:in `index'
+
+Rendered rescues/_trace (103.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:44:41) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 10) [0m
+
+ActionView::TemplateError (undefined method `photo' for nil:NilClass) on line #18 of app/views/albums/index.html.erb:
+15:     <td><%= link_to album.title, album %></td>
+16:     <td><%= album.short_name %></td>
+17: 	<td>
+18: 	         <%= show_thumbnail(album) %>
+19: 	    </td>
+20:     <td><%= link_to 'Edit', edit_album_path(album) %></td>
+21:     <td><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/helpers/application_helper.rb:5:in `show_thumbnail'
+    app/views/albums/index.html.erb:18
+    app/views/albums/index.html.erb:12:in `each'
+    app/views/albums/index.html.erb:12
+    app/controllers/albums_controller.rb:7:in `index'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:45:12) [GET]
+  [4;36;1mAlbum Load (0.6ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 10) [0m
+  [4;36;1mImage Load (0.1ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 11) [0m
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 12) [0m
+Completed in 91ms (View: 33, DB: 1) | 200 OK [http://localhost/albums/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-24 19:45:12) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AlbumsController#destroy (for 127.0.0.1 at 2010-05-24 19:45:21) [DELETE]
+  Parameters: {"authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "id"=>"12"}
+  [4;36;1mAlbum Load (0.3ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 12) [0m
+  [4;35;1mAlbum Destroy (0.5ms)[0m   [0mDELETE FROM "albums" WHERE "id" = 12[0m
+Redirected to http://localhost:3000/albums
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/albums/12]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:45:21) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 10) [0m
+  [4;36;1mImage Load (0.1ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 11) [0m
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/albums]
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-05-24 19:45:22) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/albums/10/edit]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:45:25) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 10) [0m
+  [4;36;1mImage Load (0.1ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 11) [0m
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/albums]
+
+
+Processing AlbumsController#destroy (for 127.0.0.1 at 2010-05-24 19:45:32) [DELETE]
+  Parameters: {"authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "id"=>"10"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 10) [0m
+  [4;36;1mAlbum Destroy (0.5ms)[0m   [0;1mDELETE FROM "albums" WHERE "id" = 10[0m
+Redirected to http://localhost:3000/albums
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/albums/10]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:45:32) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.1ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 11) [0m
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/albums]
+
+
+Processing AlbumsController#destroy (for 127.0.0.1 at 2010-05-24 19:45:33) [DELETE]
+  Parameters: {"authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "id"=>"11"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 11) [0m
+  [4;36;1mAlbum Destroy (0.2ms)[0m   [0;1mDELETE FROM "albums" WHERE "id" = 11[0m
+Redirected to http://localhost:3000/albums
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/albums/11]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:45:33) [GET]
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/albums]
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-05-24 19:46:47) [GET]
+Rendering template within layouts/application
+Rendering albums/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/albums/new]
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-05-24 19:47:03) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "album"=>{"title"=>"fresh ", "short_name"=>"fresh"}}
+  [4;36;1mAlbum Load (0.1ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."title" = 'fresh ') LIMIT 1[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("created_at", "title", "updated_at", "short_name") VALUES('2010-05-24 14:17:03', 'fresh ', '2010-05-24 14:17:03', 'fresh')[0m
+Redirected to http://localhost:3000/albums/13
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/albums]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:47:03) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 13) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 13) [0m
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/albums/13]
+
+
+Processing ImagesController#new (for 127.0.0.1 at 2010-05-24 19:47:05) [GET]
+  Parameters: {"album_id"=>"13"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 13) [0m
+Rendering template within layouts/application
+Rendering images/new
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/albums/13/images/new]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2010-05-24 19:47:17) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "image"=>{"photo"=>#<File:/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/RackMultipart20100524-6800-gvujty-0>, "album_id"=>"13", "title"=>"wow", "short_name"=>"wow"}}
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' '-resize' 'x100' '-crop' '100x100+16+0' '+repage' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0,6800,0' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' '-resize' '150x150>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0,6800,1' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' '-resize' '300x300>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0,6800,2' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' '-resize' '400x400>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0,6800,3' 2>/dev/null
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT "images".id FROM "images" WHERE ("images"."title" = 'wow') LIMIT 1[0m
+  [4;36;1mImage Create (0.4ms)[0m   [0;1mINSERT INTO "images" ("created_at", "photo_file_size", "title", "album_id", "updated_at", "photo_file_name", "photo_content_type", "short_name") VALUES('2010-05-24 14:17:17', 1859, 'wow', 13, '2010-05-24 14:17:17', 'images1.jpg', 'image/jpeg', 'wow')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/22/thumb/images1.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/22/medium/images1.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/22/small/images1.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/22/large/images1.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/22/original/images1.jpg
+Redirected to http://localhost:3000/albums/13
+Completed in 196ms (DB: 1) | 302 Found [http://localhost/images]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:47:17) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 13) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 13) [0m
+Completed in 98ms (View: 92, DB: 0) | 200 OK [http://localhost/albums/13]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:47:26) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 13) [0m
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/albums]
+
+
+Processing AlbumsController#destroy (for 127.0.0.1 at 2010-05-24 19:48:18) [DELETE]
+  Parameters: {"authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "id"=>"13"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 13) [0m
+  [4;36;1mAlbum Destroy (0.2ms)[0m   [0;1mDELETE FROM "albums" WHERE "id" = 13[0m
+Redirected to http://localhost:3000/albums
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/albums/13]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:48:18) [GET]
+  [4;35;1mAlbum Load (0.3ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/albums]
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-05-24 19:48:19) [GET]
+Rendering template within layouts/application
+Rendering albums/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/albums/new]
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-05-24 19:48:26) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "album"=>{"title"=>"fresh", "short_name"=>"fresh"}}
+  [4;36;1mAlbum Load (0.1ms)[0m   [0;1mSELECT "albums".id FROM "albums" WHERE ("albums"."title" = 'fresh') LIMIT 1[0m
+  [4;35;1mAlbum Create (0.2ms)[0m   [0mINSERT INTO "albums" ("created_at", "title", "updated_at", "short_name") VALUES('2010-05-24 14:18:26', 'fresh', '2010-05-24 14:18:26', 'fresh')[0m
+Redirected to http://localhost:3000/albums/14
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/albums]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:48:26) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/albums/14]
+
+
+Processing ImagesController#new (for 127.0.0.1 at 2010-05-24 19:48:27) [GET]
+  Parameters: {"album_id"=>"14"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering images/new
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/albums/14/images/new]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2010-05-24 19:48:35) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "image"=>{"photo"=>#<File:/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/RackMultipart20100524-6800-mjk22i-0>, "album_id"=>"14", "title"=>"wow", "short_name"=>"wow"}}
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' '-resize' 'x100' '-crop' '100x100+16+0' '+repage' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0,6800,0' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' '-resize' '150x150>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0,6800,1' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' '-resize' '300x300>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0,6800,2' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0.jpg[0]' '-resize' '400x400>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,0,6800,3' 2>/dev/null
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT "images".id FROM "images" WHERE ("images"."title" = 'wow') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering images/new
+Completed in 295ms (View: 11, DB: 0) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2010-05-24 19:48:46) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "image"=>{"album_id"=>"14", "title"=>"wow ", "short_name"=>"wow"}}
+  [4;36;1mImage Load (0.1ms)[0m   [0;1mSELECT "images".id FROM "images" WHERE ("images"."title" = 'wow ') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering images/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2010-05-24 19:48:50) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "image"=>{"album_id"=>"14", "title"=>"woww ", "short_name"=>"wow"}}
+  [4;35;1mImage Load (0.1ms)[0m   [0mSELECT "images".id FROM "images" WHERE ("images"."title" = 'woww ') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering images/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2010-05-24 19:48:54) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "image"=>{"photo"=>#<File:/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/RackMultipart20100524-6800-zbgbx9-0>, "album_id"=>"14", "title"=>"woww ", "short_name"=>"wow"}}
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' 'x100' '-crop' '100x100+16+0' '+repage' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,0' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '150x150>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,1' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '300x300>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,2' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '400x400>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,3' 2>/dev/null
+  [4;36;1mImage Load (0.2ms)[0m   [0;1mSELECT "images".id FROM "images" WHERE ("images"."title" = 'woww ') LIMIT 1[0m
+  [4;35;1mImage Create (0.3ms)[0m   [0mINSERT INTO "images" ("created_at", "photo_file_size", "title", "album_id", "updated_at", "photo_file_name", "photo_content_type", "short_name") VALUES('2010-05-24 14:18:55', 22422, 'woww ', 14, '2010-05-24 14:18:55', 'vista-wallpaper-grass-ripples-2.jpg', 'image/jpeg', 'wow')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/23/thumb/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/23/medium/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/23/small/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/23/large/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/23/original/vista-wallpaper-grass-ripples-2.jpg
+Redirected to http://localhost:3000/albums/14
+Completed in 376ms (DB: 0) | 302 Found [http://localhost/images]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:48:55) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/albums/14]
+
+
+Processing ImagesController#new (for 127.0.0.1 at 2010-05-24 19:48:59) [GET]
+  Parameters: {"album_id"=>"14"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering images/new
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/albums/14/images/new]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2010-05-24 19:49:28) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "image"=>{"photo"=>#<File:/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/RackMultipart20100524-6800-wxq4w6-0>, "album_id"=>"14", "title"=>"vista", "short_name"=>""}}
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2.jpg[0]' '-resize' 'x100' '-crop' '100x100+16+0' '+repage' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2,6800,0' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2.jpg[0]' '-resize' '150x150>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2,6800,1' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2.jpg[0]' '-resize' '300x300>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2,6800,2' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2.jpg[0]' '-resize' '400x400>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,2,6800,3' 2>/dev/null
+  [4;35;1mImage Load (0.8ms)[0m   [0mSELECT "images".id FROM "images" WHERE ("images"."title" = 'vista') LIMIT 1[0m
+  [4;36;1mImage Create (0.3ms)[0m   [0;1mINSERT INTO "images" ("created_at", "photo_file_size", "title", "album_id", "updated_at", "photo_file_name", "photo_content_type", "short_name") VALUES('2010-05-24 14:19:28', 22422, 'vista', 14, '2010-05-24 14:19:28', 'vista-wallpaper-grass-ripples-2.jpg', 'image/jpeg', '')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/24/thumb/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/24/medium/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/24/small/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/24/large/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/24/original/vista-wallpaper-grass-ripples-2.jpg
+Redirected to http://localhost:3000/albums/14
+Completed in 300ms (DB: 1) | 302 Found [http://localhost/images]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:49:28) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;36;1mImage Load (0.4ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/albums/14]
+
+
+Processing ImagesController#edit (for 127.0.0.1 at 2010-05-24 19:49:39) [GET]
+  Parameters: {"album_id"=>"14", "id"=>"24"}
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 24) [0m
+Rendering template within layouts/application
+Rendering images/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/albums/14/images/24/edit]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:49:41) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://localhost/albums/14]
+
+
+Processing ImagesController#destroy (for 127.0.0.1 at 2010-05-24 19:49:43) [DELETE]
+  Parameters: {"authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "id"=>"24"}
+  [4;36;1mImage Load (0.2ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 24) [0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/jeet/vcs/Album/public/system/photos/24/original/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] deleting /Users/jeet/vcs/Album/public/system/photos/24/thumb/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] deleting /Users/jeet/vcs/Album/public/system/photos/24/small/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] deleting /Users/jeet/vcs/Album/public/system/photos/24/medium/vista-wallpaper-grass-ripples-2.jpg
+[paperclip] deleting /Users/jeet/vcs/Album/public/system/photos/24/large/vista-wallpaper-grass-ripples-2.jpg
+  [4;35;1mImage Destroy (0.3ms)[0m   [0mDELETE FROM "images" WHERE "id" = 24[0m
+Redirected to http://localhost:3000/albums/14
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/images/24]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:49:43) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/albums/14]
+
+
+Processing ImagesController#new (for 127.0.0.1 at 2010-05-24 19:49:45) [GET]
+  Parameters: {"album_id"=>"14"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering images/new
+Completed in 72ms (View: 4, DB: 0) | 200 OK [http://localhost/albums/14/images/new]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2010-05-24 19:49:59) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "image"=>{"photo"=>#<File:/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/RackMultipart20100524-6800-yb2hlm-0>, "album_id"=>"14", "title"=>"wall", "short_name"=>""}}
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' 'x100' '-crop' '100x100+16+0' '+repage' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,0' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '150x150>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,1' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '300x300>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,2' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '400x400>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,3' 2>/dev/null
+  [4;35;1mImage Load (0.2ms)[0m   [0mSELECT "images".id FROM "images" WHERE ("images"."title" = 'wall') LIMIT 1[0m
+  [4;36;1mImage Create (0.3ms)[0m   [0;1mINSERT INTO "images" ("created_at", "photo_file_size", "title", "album_id", "updated_at", "photo_file_name", "photo_content_type", "short_name") VALUES('2010-05-24 14:19:59', 29095, 'wall', 14, '2010-05-24 14:19:59', 'vista-wallpaper-flat-green-1600x1200.jpg', 'image/jpeg', '')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/25/thumb/vista-wallpaper-flat-green-1600x1200.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/25/medium/vista-wallpaper-flat-green-1600x1200.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/25/small/vista-wallpaper-flat-green-1600x1200.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/25/large/vista-wallpaper-flat-green-1600x1200.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/25/original/vista-wallpaper-flat-green-1600x1200.jpg
+Redirected to http://localhost:3000/albums/14
+Completed in 314ms (DB: 1) | 302 Found [http://localhost/images]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:49:59) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/albums/14]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:50:56) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/albums]
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2010-05-24 19:50:58) [GET]
+Rendering template within layouts/application
+Rendering albums/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/albums/new]
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2010-05-24 19:51:05) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "album"=>{"title"=>"one more", "short_name"=>""}}
+  [4;35;1mAlbum Load (0.1ms)[0m   [0mSELECT "albums".id FROM "albums" WHERE ("albums"."title" = 'one more') LIMIT 1[0m
+  [4;36;1mAlbum Create (0.3ms)[0m   [0;1mINSERT INTO "albums" ("created_at", "title", "updated_at", "short_name") VALUES('2010-05-24 14:21:05', 'one more', '2010-05-24 14:21:05', '')[0m
+Redirected to http://localhost:3000/albums/15
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/albums]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:51:05) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;36;1mImage Load (0.1ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/albums/15]
+
+
+Processing ImagesController#new (for 127.0.0.1 at 2010-05-24 19:51:08) [GET]
+  Parameters: {"album_id"=>"15"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering images/new
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/albums/15/images/new]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2010-05-24 19:51:17) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "image"=>{"photo"=>#<File:/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/RackMultipart20100524-6800-b13pr8-0>, "album_id"=>"15", "title"=>"summer", "short_name"=>""}}
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' 'x100' '-crop' '100x100+12+0' '+repage' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,0' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '150x150>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,1' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '300x300>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,2' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '400x400>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,3' 2>/dev/null
+  [4;36;1mImage Load (0.2ms)[0m   [0;1mSELECT "images".id FROM "images" WHERE ("images"."title" = 'summer') LIMIT 1[0m
+  [4;35;1mImage Create (0.3ms)[0m   [0mINSERT INTO "images" ("created_at", "photo_file_size", "title", "album_id", "updated_at", "photo_file_name", "photo_content_type", "short_name") VALUES('2010-05-24 14:21:18', 465366, 'summer', 15, '2010-05-24 14:21:18', 'Great_Summer_Feeling__by_PhysicalMagic.jpg', 'image/jpeg', '')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/26/thumb/Great_Summer_Feeling__by_PhysicalMagic.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/26/medium/Great_Summer_Feeling__by_PhysicalMagic.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/26/small/Great_Summer_Feeling__by_PhysicalMagic.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/26/large/Great_Summer_Feeling__by_PhysicalMagic.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/26/original/Great_Summer_Feeling__by_PhysicalMagic.jpg
+Redirected to http://localhost:3000/albums/15
+Completed in 484ms (DB: 1) | 302 Found [http://localhost/images]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:51:18) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 98ms (View: 92, DB: 1) | 200 OK [http://localhost/albums/15]
+
+
+Processing ImagesController#new (for 127.0.0.1 at 2010-05-24 19:51:43) [GET]
+  Parameters: {"album_id"=>"15"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering images/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/albums/15/images/new]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2010-05-24 19:51:52) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "image"=>{"photo"=>#<File:/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/RackMultipart20100524-6800-1vqwmuu-0>, "album_id"=>"15", "title"=>"Bliss", "short_name"=>""}}
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' 'x100' '-crop' '100x100+12+0' '+repage' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,0' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '150x150>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,1' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '300x300>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,2' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '400x400>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,3' 2>/dev/null
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT "images".id FROM "images" WHERE ("images"."title" = 'Bliss') LIMIT 1[0m
+  [4;36;1mImage Create (0.4ms)[0m   [0;1mINSERT INTO "images" ("created_at", "photo_file_size", "title", "album_id", "updated_at", "photo_file_name", "photo_content_type", "short_name") VALUES('2010-05-24 14:21:53', 428140, 'Bliss', 15, '2010-05-24 14:21:53', 'Bliss_1_0_by_computerarts.jpg', 'image/jpeg', '')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/27/thumb/Bliss_1_0_by_computerarts.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/27/medium/Bliss_1_0_by_computerarts.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/27/small/Bliss_1_0_by_computerarts.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/27/large/Bliss_1_0_by_computerarts.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/27/original/Bliss_1_0_by_computerarts.jpg
+Redirected to http://localhost:3000/albums/15
+Completed in 718ms (DB: 1) | 302 Found [http://localhost/images]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:51:53) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/albums/15]
+
+
+Processing ImagesController#new (for 127.0.0.1 at 2010-05-24 19:51:55) [GET]
+  Parameters: {"album_id"=>"15"}
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM "albums" WHERE ("albums"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering images/new
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/albums/15/images/new]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2010-05-24 19:52:04) [POST]
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"7m1VqhgU41BWaPZ6o/YjhPYSi+/zQsKNz3G/EkI1F68=", "image"=>{"photo"=>#<File:/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/RackMultipart20100524-6800-d5b8zb-0>, "album_id"=>"15", "title"=>"cloud", "short_name"=>""}}
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' 'x100' '-crop' '100x100+16+0' '+repage' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,0' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '150x150>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,1' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '300x300>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,2' 2>/dev/null
+[paperclip] identify '-format' '%wx%h' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' 2>/dev/null
+[paperclip] convert '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1.jpg[0]' '-resize' '400x400>' '/var/folders/Ku/KuU-vnqvE4ae2kxJSlZl6U+++TI/-Tmp-/stream,6800,1,6800,3' 2>/dev/null
+  [4;36;1mImage Load (0.2ms)[0m   [0;1mSELECT "images".id FROM "images" WHERE ("images"."title" = 'cloud') LIMIT 1[0m
+  [4;35;1mImage Create (0.3ms)[0m   [0mINSERT INTO "images" ("created_at", "photo_file_size", "title", "album_id", "updated_at", "photo_file_name", "photo_content_type", "short_name") VALUES('2010-05-24 14:22:05', 379149, 'cloud', 15, '2010-05-24 14:22:05', 'Summerclouds_by_DJMattRicks.jpg', 'image/jpeg', '')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/28/thumb/Summerclouds_by_DJMattRicks.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/28/medium/Summerclouds_by_DJMattRicks.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/28/small/Summerclouds_by_DJMattRicks.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/28/large/Summerclouds_by_DJMattRicks.jpg
+[paperclip] saving /Users/jeet/vcs/Album/public/system/photos/28/original/Summerclouds_by_DJMattRicks.jpg
+Redirected to http://localhost:3000/albums/15
+Completed in 551ms (DB: 1) | 302 Found [http://localhost/images]
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2010-05-24 19:52:05) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering albums/show
+  [4;35;1mImage Load (0.5ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://localhost/albums/15]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:08) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;36;1mImage Load (0.4ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 92ms (View: 87, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:11) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:12) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;36;1mImage Load (0.4ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:13) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;35;1mImage Load (0.4ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:15) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;36;1mImage Load (0.4ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:16) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:17) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:17) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:18) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:19) [GET]
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;35;1mImage Load (0.4ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:19) [GET]
+  [4;36;1mAlbum Load (0.4ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.4ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:19) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:20) [GET]
+  [4;36;1mAlbum Load (0.5ms)[0m   [0;1mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;35;1mImage Load (0.3ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:20) [GET]
+  [4;35;1mAlbum Load (0.5ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;35;1mImage Load (0.4ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 76ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2010-05-24 19:52:26) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM "albums" WHERE ("albums"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering albums/edit
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/albums/14/edit]
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2010-05-24 19:52:27) [GET]
+  [4;35;1mAlbum Load (0.4ms)[0m   [0mSELECT * FROM "albums" [0m
+Rendering template within layouts/application
+Rendering albums/index
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images".album_id = 14) [0m
+  [4;35;1mImage Load (0.4ms)[0m   [0mSELECT * FROM "images" WHERE ("images".album_id = 15) [0m
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/albums]

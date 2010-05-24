@@ -14,6 +14,9 @@
     <td><%=serials%></td>
     <td><%= link_to album.title, album %></td>
     <td><%= album.short_name %></td>
+	<td>
+	         <%= show_thumbnail(album) %>
+	    </td>
     <td><%= link_to 'Edit', edit_album_path(album) %></td>
     <td><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
