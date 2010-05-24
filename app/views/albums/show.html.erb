@@ -12,7 +12,7 @@
 <% @album.images.each do |image| %>
        <tr>
                <td><div><b>Image Title: </b><%=h image.title %></div><div><b>Image Short name: </b><%=h image.short_name %></div>
-               <div><%= link_to 'Edit caption', edit_album_image_path(@album,image) %> | <%= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete %></div>
+               <div><%= link_to 'Edit', edit_album_image_path(@album,image) %> | <%= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete %></div>
 
                </td>
 <% if image.photo.exists?  %>
