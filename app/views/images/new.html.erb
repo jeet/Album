@@ -1,0 +1,28 @@
+    <h1>New image</h1>
+
+<% form_for(@image,:html => { :multipart => true }) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :short_name %><br />
+    <%= f.text_field :short_name %>
+  </p>
+
+    <%= f.hidden_field :album_id %>
+        <p>
+
+          <%= f.label 'Photo' %><br />
+           <%= f.file_field :photo %>
+          
+        </p>
+  
+  <p>
+    <%= f.submit 'Upload' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', album_path(@image.album_id) %>

@@ -1,0 +1,27 @@
+<h1>Albums</h1>
+
+<table>
+  <tr>
+   <th>Serial No.</th>
+    <th>Title</th>
+    <th>Short name</th>
+  </tr>
+
+<%
+   serials = 1
+   @albums.each do |album| %>
+  <tr>
+    <td><%=serials%></td>
+    <td><%= link_to album.title, album %></td>
+    <td><%= album.short_name %></td>
+    <td><%= link_to 'Edit caption', edit_album_path(album) %></td>
+    <td><%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<%
+   serials = serials + 1
+   end %>
+</table>
+
+<br />
+
+<%= link_to 'New album', new_album_path %>
