@@ -1,5 +1,8 @@
 class Image < ActiveRecord::Base
 #  has_many :attachments, :class_name => '::Attachment'
+  has_many :album_images
+  has_many :albums, :through => :album_images
+  
  validates_presence_of :title
   validates_uniqueness_of :title
   validates_attachment_presence :photo
