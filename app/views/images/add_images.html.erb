@@ -1,0 +1,25 @@
+<% form_for(:album_image) do |f| %>
+
+<table>
+
+<% @images.each do |image| %>
+       <tr>
+               <td><div><b>Image Title: </b><%=h image.title %></div><div><b>Image Short name: </b><%=h image.short_name %></div>
+              
+
+               </td>
+<% if image.photo.exists?  %>
+
+               <td><input type="checkbox" id="album_image_image_ids" name="album_image[image_ids][]" value="<%=image.id%>"><%= image_tag image.photo.url(:small) %></td>
+
+
+
+
+<% end %>
+
+       </tr>
+   <% end  %>
+         </table>
+
+<input type="submit" name="Add Images" value="Add Images">
+<% end %>

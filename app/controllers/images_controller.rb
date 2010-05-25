@@ -1,4 +1,5 @@
 class ImagesController < ApplicationController
+  require "pp"
   # GET /images
   # GET /images.xml
   before_filter :find_album , :only => [:index,:new,:show]
@@ -33,6 +34,71 @@ class ImagesController < ApplicationController
     end
   end                                                                       
 
+
+
+
+  def add_images
+   @album = Album.find(params[:album_id] )
+   image_ids =  @album.album_images.map &:image_id
+   pp image_ids
+   #exit
+   @images = Image.find(:all,:conditions => [ "id NOT IN (?)", image_ids ]  )
+
+
+
+
+
+    if request.post?
+        album_images = Hash.new
+        @image_ids =  params[:album_image][:image_ids]
+        album_images[:album_id] = params[:album_id]
+        @image_ids.each do |image_id|
+        album_images[:image_id] = image_id
+        @album_image = AlbumImage.new(album_images)
+
+       @album_image.save
+
+        end
+
+
+         respond_to do |format|
+          flash[:notice] = 'Image was successfully added.'
+        #format.html { redirect_to(album_image_url(@image.album_id,@image)  ) }
+        format.html { redirect_to(album_path(@album_image.album_id)) }
+        format.xml  { render :xml => @album_image, :status => :created, :location => @album_image }
+
+
+
+     end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      end
+    end
+
+
+
+
+
+
+
+
+
   # GET /images/1/edit
   def edit
     @image = Image.find(params[:id])
@@ -45,6 +111,7 @@ class ImagesController < ApplicationController
 
     respond_to do |format|
       if @image.save
+            AlbumImage.create(:image_id => @image.id,:album_id => params[:image][:album_id])
         flash[:notice] = 'Image was successfully created.'
         #format.html { redirect_to(album_image_url(@image.album_id,@image)  ) }
         format.html { redirect_to(album_path(@image.album_id)     ) }
