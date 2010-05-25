@@ -5,7 +5,10 @@
 <% @images.each do |image| %>
        <tr>
                <td><div><b>Image Title: </b><%=h image.title %></div><div><b>Image Short name: </b><%=h image.short_name %></div>
-              
+                <div><b>Albums: </b><% image.albums.each do |album|  %>
+                      <%=album.title%>,
+                      <% end %>
+                      </div>
 
                </td>
 <% if image.photo.exists?  %>

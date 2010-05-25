@@ -40,8 +40,7 @@ class ImagesController < ApplicationController
   def add_images
    @album = Album.find(params[:album_id] )
    image_ids =  @album.album_images.map &:image_id
-   pp image_ids
-   #exit
+  
    @images = Image.find(:all,:conditions => [ "id NOT IN (?)", image_ids ]  )
 
 
